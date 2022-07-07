@@ -6,4 +6,8 @@
 
 # Making a second conflict from GitHub.
 
+Keeping both:
 # Conflict PyCharm.
+
+# Conflict GitHub.
+
