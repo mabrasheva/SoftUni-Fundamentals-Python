@@ -5,3 +5,5 @@
 # Making a conflict from GitHub.
 
 # Making a second conflict from GitHub.
+
+# Conflict GitHub.
