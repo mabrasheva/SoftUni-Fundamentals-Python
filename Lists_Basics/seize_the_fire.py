@@ -6,9 +6,9 @@
 # Afterward you will receive the amount of water you have for putting out the fires. There is a range of fire for each
 # fire type, and if a cell's value is below or exceeds it, it is invalid, and you do not need to put it out.
 # Type of Fire	Range
-# High	81 - 125
-# Medium	51 - 80
-# Low	1 - 50
+# High 81 - 125
+# Medium 51 - 80
+# Low 1 - 50
 # If a cell is valid, you should put it out by reducing the water with its value. Putting out fire also takes effort,
 # and you need to calculate it. Its value is equal to 25% of the cell's value. In the end, you will have to print the total effort. Keep putting out cells until you run out of water. Skip it and try the next one if you do not have enough water to put out a given cell. In the end, print the cells you have put out in the following format:
 # "Cells:
@@ -41,7 +41,7 @@ for number in range(len(fires)):
             (fire_type == "Low" and 1 <= cell_value <= 50):
         cell_is_valid = True
 
-    if cell_is_valid and (water >= cell_value):
+    if cell_is_valid and water >= cell_value:
         water -= cell_value
         effort += 0.25 * cell_value
         total_fire += cell_value
