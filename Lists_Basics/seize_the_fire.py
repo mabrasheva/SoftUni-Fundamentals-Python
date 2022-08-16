@@ -10,7 +10,11 @@
 # Medium 51 - 80
 # Low 1 - 50
 # If a cell is valid, you should put it out by reducing the water with its value. Putting out fire also takes effort,
-# and you need to calculate it. Its value is equal to 25% of the cell's value. In the end, you will have to print the total effort. Keep putting out cells until you run out of water. Skip it and try the next one if you do not have enough water to put out a given cell. In the end, print the cells you have put out in the following format:
+# and you need to calculate it. Its value is equal to 25% of the cell's value. In the end, you will have to print the
+# total effort.
+# Keep putting out cells until you run out of water.
+# Skip it and try the next one if you do not have enough water to put out a given cell.
+# In the end, print the cells you have put out in the following format:
 # "Cells:
 #  - {cell1}
 #  - {cell2}
