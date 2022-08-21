@@ -18,6 +18,7 @@ for line in range(1, 3 + 1):
         there_is_winner = True
         winner = "Second"
     input_list.append(row)
+
 # Check diagonal
 if input_list[0][0] == input_list[1][1] == input_list[2][2] == "1" or \
         input_list[0][2] == input_list[1][1] == input_list[2][0] == "1":
