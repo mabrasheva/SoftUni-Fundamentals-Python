@@ -9,7 +9,8 @@ def tribonacci_sequence(numbers_count):
             tribonacci_list.append(number)
         else:
             tribonacci_list.append(sum(tribonacci_list[-3::]))
-    return tribonacci_list
+    tribonacci_list = [str(i) for i in tribonacci_list]
+    return " ".join(tribonacci_list)
 
 
 numbers_count_input = int(input())
