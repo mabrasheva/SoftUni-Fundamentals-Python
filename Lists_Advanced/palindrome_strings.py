@@ -13,7 +13,7 @@ palindrome_word = input()
 #         palindrome_list.append(word)
 
 palindrome_list = [word for word in words if word == word[::-1]]
-palindrome_word_found = [palindrome for palindrome in palindrome_list].count(palindrome_word)
+palindrome_word_found = palindrome_list.count(palindrome_word)
 
 print(palindrome_list)
 print(f"Found palindrome {palindrome_word_found} times")
