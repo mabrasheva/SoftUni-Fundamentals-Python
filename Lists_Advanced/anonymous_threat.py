@@ -54,8 +54,11 @@ def divide(list_data, index, number_of_partitions):
         remainder_to_add_to_the_last_partition = len(list_data[index]) % number_of_partitions
         for index_of_partition in range(index, index + number_of_partitions):
             partition_to_insert = string_divided[0:length_of_each_partition]
+            # insert the partition on the correct index
             list_data.insert(index_of_partition, partition_to_insert)
+            # remove the inserted partition from string_divided
             string_divided = string_divided[length_of_each_partition::]
+            # if there is remainder add it to the last partition:
         if remainder_to_add_to_the_last_partition > 0:
             list_data[index + number_of_partitions - 1] = list_data[number_of_partitions - 1] + string_divided
 
