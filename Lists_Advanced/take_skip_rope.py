@@ -44,14 +44,14 @@ for character in input_string:
 numbers_list = [int(number) for number in numbers_list]
 
 for index in range(len(numbers_list)):
-    if index % 2 == 0:
+    if index % 2 == 0: # In the take list, you should keep all digits at an even index.
         characters_to_take = numbers_list[index]
         # First, take m characters from the non-numbers list and store it in a result string.
         string_to_add = non_numbers_list[:characters_to_take]
         result += string_to_add
         non_numbers_list = non_numbers_list[characters_to_take::]
 
-    else:
+    else: # In the skip list, you should keep all digits at an odd index.
         # Then, skip n characters from the non-numbers list.
         characters_to_skip = numbers_list[index]
         non_numbers_list = non_numbers_list[characters_to_skip::]
