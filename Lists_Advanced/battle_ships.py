@@ -20,16 +20,14 @@ def attack(ships_list, squares_list):
 
 
 rows_number = int(input())  # ex.3
-ships = [input().split() for row in
-         range(rows_number)]  # ex. [['1', '0', '0', '1'], ['2', '0', '0', '0'], ['0', '3', '0', '1']]
+ships = [input().split() for row in range(rows_number)]  # ex. [['1', '0', '0', '1'], ['2', '0', '0', '0'], ['0', '3', '0', '1']]
 squares = input().split()  # ex. ['0-0', '1-0', '2-1', '2-1', '2-1', '1-1', '2-1']
 
 # Turn all elements from str to int.
 for index in range(len(squares)):
     squares[index] = squares[index].split("-")
     for coordinates in range(len(squares[index])):
-        squares[index][coordinates] = int(
-            squares[index][coordinates])  # ex. [[0, 0], [1, 0], [2, 1], [2, 1], [2, 1], [1, 1], [2, 1]]
+        squares[index][coordinates] = int(squares[index][coordinates])  # ex. [[0, 0], [1, 0], [2, 1], [2, 1], [2, 1], [1, 1], [2, 1]]
 
 # Turn all elements from str to int.
 for row in range(len(ships)):
