@@ -19,19 +19,19 @@ def attack(ships_list, squares_list):
     return destroyed_count
 
 
-rows_number = int(input())  # ex.3
-ships = [input().split() for row in range(rows_number)]  # ex. [['1', '0', '0', '1'], ['2', '0', '0', '0'], ['0', '3', '0', '1']]
-squares = input().split()  # ex. ['0-0', '1-0', '2-1', '2-1', '2-1', '1-1', '2-1']
+rows_number = int(input())  # example: 3
+ships = [input().split() for row in range(rows_number)]  # example: [['1', '0', '0', '1'], ['2', '0', '0', '0'], ['0', '3', '0', '1']]
+squares = input().split()  # example: ['0-0', '1-0', '2-1', '2-1', '2-1', '1-1', '2-1']
 
 # Turn all elements from str to int.
 for index in range(len(squares)):
     squares[index] = squares[index].split("-")
     for coordinates in range(len(squares[index])):
-        squares[index][coordinates] = int(squares[index][coordinates])  # ex. [[0, 0], [1, 0], [2, 1], [2, 1], [2, 1], [1, 1], [2, 1]]
+        squares[index][coordinates] = int(squares[index][coordinates])  # example: [[0, 0], [1, 0], [2, 1], [2, 1], [2, 1], [1, 1], [2, 1]]
 
 # Turn all elements from str to int.
 for row in range(len(ships)):
     for column in range(len(ships[row])):
-        ships[row][column] = int(ships[row][column])  # ex. [[1, 0, 0, 1], [2, 0, 0, 0], [0, 3, 0, 1]]
+        ships[row][column] = int(ships[row][column])  # example: [[1, 0, 0, 1], [2, 0, 0, 0], [0, 3, 0, 1]]
 
 print(attack(ships, squares))
