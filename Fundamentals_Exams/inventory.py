@@ -10,6 +10,7 @@
 # Output
 # After receiving "Craft!" print the items in your inventory, separated by ", ".
 
+
 inventory = input().split(", ")
 command = input()
 while command != "Craft!":
