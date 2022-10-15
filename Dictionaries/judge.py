@@ -43,6 +43,7 @@ def calc_contests(input_username: str, input_contest: str, input_points: int):
             contests[input_contest].update({input_username: input_points})
         else:
             if input_points > contests[input_contest][input_username]:
+                # subtract the last points value, then with add_points_to_user adds the new points value.
                 users[input_username] -= contests[input_contest][input_username]
                 contests[input_contest].update({input_username: input_points})
 
