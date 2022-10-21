@@ -40,7 +40,7 @@ while command != "end":
         index_two = int(command[2])
         result[index_one] *= result[index_two]
 
-    if action == "decrease":
+    elif action == "decrease":
         result = [number - 1 for number in result]
 
     command = input()
