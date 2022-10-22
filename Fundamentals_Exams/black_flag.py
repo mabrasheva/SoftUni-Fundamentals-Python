@@ -16,20 +16,45 @@
 # Output
 # •	 In the end, print whether the plunder was successful or not, following the format described above.
 
+# Scenario 1:
+
+# days = int(input())
+# daily_plunder = int(input())
+# expected_plunder = float(input())
+# total_plunder = 0
+#
+# for day in range(1, days + 1):
+#     total_plunder += daily_plunder
+#     if day % 3 == 0:
+#         total_plunder += daily_plunder / 2
+#     if day % 5 == 0:
+#         total_plunder *= 0.70
+#
+# if total_plunder >= expected_plunder:
+#     print(f"Ahoy! {total_plunder:.2f} plunder gained.")
+# else:
+#     percent = total_plunder * 100 / expected_plunder
+#     print(f"Collected only {percent:.2f}% of the plunder.")
+
+# Scenaio 2 (with function):
+
+def gained_plunder(days_period, daily, expected):
+    total_plunder = 0
+    for day in range(1, days_period + 1):
+        total_plunder += daily
+        if day % 3 == 0:
+            total_plunder += 0.5 * daily
+        if day % 5 == 0:
+            total_plunder -= 0.30 * total_plunder
+    if total_plunder >= expected:
+        return f"Ahoy! {total_plunder:.2f} plunder gained."
+    percentage = total_plunder * 100 / expected
+    return f"Collected only {percentage:.2f}% of the plunder."
+
+
 days = int(input())
 daily_plunder = int(input())
 expected_plunder = float(input())
-total_plunder = 0
 
-for day in range(1, days + 1):
-    total_plunder += daily_plunder
-    if day % 3 == 0:
-        total_plunder += daily_plunder / 2
-    if day % 5 == 0:
-        total_plunder *= 0.70
-
-if total_plunder >= expected_plunder:
-    print(f"Ahoy! {total_plunder:.2f} plunder gained.")
-else:
-    percent = total_plunder * 100 / expected_plunder
-    print(f"Collected only {percent:.2f}% of the plunder.")
+result = gained_plunder(days, daily_plunder, expected_plunder)
+print(result)
