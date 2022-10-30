@@ -18,14 +18,30 @@ morse_code_dict = {'A': '.-', 'B': '-...',
                    '?': '..--..', '/': '-..-.', '-': '-....-',
                    '(': '-.--.', ')': '-.--.-'}
 
+# Scenario 1:
+
 code = input().split(" | ")
 result = []
 for word in code:
     word = word.split()
-    result_word = []
+    result_word = ""
     for letter in word:
-        value = [i for i in morse_code_dict if morse_code_dict[i] == letter]
-        result_word += value
-    result_word = "".join(result_word)
+        for key in morse_code_dict:
+            if morse_code_dict[key] == letter:
+                result_word += key
     result.append(result_word)
 print(*result)
+
+# Scenario 2:
+
+# code = input().split(" | ")
+# result = []
+# for word in code:
+#     word = word.split()
+#     result_word = []
+#     for letter in word:
+#         value = [i for i in morse_code_dict if morse_code_dict[i] == letter]
+#         result_word += value
+#     result_word = "".join(result_word)
+#     result.append(result_word)
+# print(*result)
