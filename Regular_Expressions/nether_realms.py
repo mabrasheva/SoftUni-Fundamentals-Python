@@ -50,4 +50,4 @@ for demon in sorted(demons):
                     damage /= 2
     else:
         damage = 0
-    print(f"{demon} - {health} health, {damage:.2f} damage ")
+    print(f"{demon} - {health} health, {damage:.2f} damage")
