@@ -1,4 +1,6 @@
-# On the first line, you will be given a string containing all of your stops. Until you receive the command "Travel", you will be given some commands to manipulate that initial string. The commands can be:
+# On the first line, you will be given a string containing all of your stops.
+# Until you receive the command "Travel", you will be given some commands to manipulate that initial string.
+# The commands can be:
 # •	"Add Stop:{index}:{string}":
 # o	Insert the given string at that index only if the index is valid
 # •	"Remove Stop:{start_index}:{end_index}":
