@@ -1,4 +1,7 @@
-# On the first line of the input, you will receive the concealed message. After that, until the "Reveal" command is given, you will receive strings with instructions for different operations that need to be performed upon the concealed message to interpret it and reveal its actual content. There are several types of instructions, split by ":|:"
+# On the first line of the input, you will receive the concealed message.
+# After that, until the "Reveal" command is given, you will receive strings with instructions for different operations
+# that need to be performed upon the concealed message to interpret it and reveal its actual content.
+# There are several types of instructions, split by ":|:"
 # •	"InsertSpace:|:{index}":
 # o	Inserts a single space at the given index. The given index will always be valid.
 # •	"Reverse:|:{substring}":
