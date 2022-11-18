@@ -81,7 +81,6 @@ def heal(command: str):
     max_hp = 100
     action, hero_name, amount = command.split(" - ")
     amount = int(amount)
-
     if heroes[hero_name]["hp"] + amount > max_hp:
         amount_recovered = max_hp - heroes[hero_name]["hp"]
         heroes[hero_name]["hp"] = max_hp
