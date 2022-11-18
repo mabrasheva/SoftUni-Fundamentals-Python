@@ -112,5 +112,6 @@ while command != "End":
 
     command = input()
 
-for hero in heroes:
-    print(f'{hero}\n  HP: {heroes[hero]["hp"]}\n  MP: {heroes[hero]["mp"]}')
+if heroes:
+    for hero in heroes:
+        print(f'{hero}\n  HP: {heroes[hero]["hp"]}\n  MP: {heroes[hero]["mp"]}')
