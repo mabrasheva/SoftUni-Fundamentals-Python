@@ -53,4 +53,4 @@ for emoji in emojis:
 
 print(f"Cool threshold: {cool_threshold}")
 print(f"{len(emojis)} emojis found in the text. The cool ones are:")
-[print(emoji) for emoji in cool_emojis]
+print(*cool_emojis, sep="\n")
