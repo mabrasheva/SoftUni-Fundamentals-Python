@@ -33,7 +33,7 @@ input_string = input()
 emojis = []
 cool_emojis = []
 
-pattern_emoji = re.compile(r"(:{2}|\*{2})([A-Z][a-z]{2,})\1")
+pattern_emoji = r"(:{2}|\*{2})([A-Z][a-z]{2,})\1"
 
 matches = re.finditer(pattern_emoji, input_string)
 if matches:
